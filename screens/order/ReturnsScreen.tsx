@@ -165,7 +165,17 @@ export default function ReturnsScreen() {
               className="h-8 w-8 text-foreground-tertiary hover:text-foreground"
               onClick={(e) => {
                 e.stopPropagation();
-                setSelectedOrder(row);
+                setSelectedOrder({
+                  id: row.id,
+                  orderNumber: row.orderNumber,
+                  viewedDate: row.viewedDate,
+                  orderDate: row.returnDate,
+                  // required fields for OrderDetailsDialogOrder
+                  req_type: "return",
+                  req_title: "Буцаалт",
+                  description: `Буцаалт (${row.orderNumber}) - ${row.amount}`,
+                  ref_image: "",
+                });
               }}
               aria-label="Дэлгэрэнгүй харах"
             >
