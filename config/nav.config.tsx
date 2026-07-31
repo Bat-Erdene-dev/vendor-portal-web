@@ -116,7 +116,7 @@ const PARTNERS: NavItem = {
   children: [
     {
       label: "Бараа бүтээгдэхүүн",
-      href: "/partners",
+      href: "/partners/products",
       roles: ["system_admin", "accountant", "pharmacy_manager"],
     },
     {

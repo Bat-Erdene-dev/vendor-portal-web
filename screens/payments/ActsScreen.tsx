@@ -11,7 +11,7 @@ import {
 import { TablePagination } from "@/components/table-pagination";
 import { FilterBar } from "@/components/filters/filter-bar";
 import { type FilterOption } from "@/components/filters/checklist-filter";
-import { Eye, DownloadIcon, UploadIcon } from "lucide-react";
+import { Eye } from "lucide-react";
 import {
   OrderDetailsDialog,
   type OrderDetailsDialogOrder,
